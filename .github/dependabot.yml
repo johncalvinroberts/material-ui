@@ -1,0 +1,81 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "21:00"
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - worktree
+  ignore:
+  - dependency-name: "@babel/*"
+    versions:
+    - ">= 0"
+  - dependency-name: babel-plugin-preval
+    versions:
+    - ">= 3.0"
+  - dependency-name: core-js
+    versions:
+    - ">= 0"
+  - dependency-name: "@date-io/core"
+    versions:
+    - ">= 0"
+  - dependency-name: "@date-io/date-fns"
+    versions:
+    - ">= 0"
+  - dependency-name: jss-*
+    versions:
+    - ">= 0"
+  - dependency-name: raw-loader
+    versions:
+    - ">= 0"
+  - dependency-name: react-dom
+    versions:
+    - ">= 0"
+  - dependency-name: react-is
+    versions:
+    - ">= 0"
+  - dependency-name: react-test-renderer
+    versions:
+    - ">= 0"
+  - dependency-name: size-limit
+    versions:
+    - ">= 0"
+  - dependency-name: tslint
+    versions:
+    - 5.x
+  - dependency-name: url-loader
+    versions:
+    - ">= 3.0"
+  - dependency-name: puppeteer
+    versions:
+    - 5.5.0
+    - 7.0.1
+    - 7.1.0
+    - 8.0.0
+  - dependency-name: "@types/jsdom"
+    versions:
+    - 16.2.4
+    - 16.2.6
+    - 16.2.7
+    - 16.2.9
+  - dependency-name: notistack
+    versions:
+    - 1.0.3
+  - dependency-name: dtslint
+    versions:
+    - 4.0.6
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: prismjs
+    versions:
+    - 1.21.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: lerna
+    versions:
+    - 3.22.1
